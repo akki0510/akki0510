@@ -51,17 +51,25 @@ Generative AI · LLM APIs · RAG · Vector Databases · AI Integration with Java
 
 ### 🤖 AI Document Assistant
 **Java · Spring Boot · GenAI · RAG · Vector Database**
-
 An AI-powered document assistant that allows users to upload documents and ask questions based on their content.
+## Features:
+PDF Upload & Text Extraction: Extracts readable text from uploaded PDF documents using PDFBox.
+Text Chunking: Splits extracted text into overlapping chunks for retrieval.
+AI Embeddings: Generates vector embeddings using Google's Gemini embedding model.
+Vector Database: Stores document chunks and embeddings in PostgreSQL with pgvector.
+Semantic Search: Retrieves the most relevant document chunks for a user's question.
+LLM Integration: Uses Gemini to generate answers grounded in retrieved document context.
+REST APIs: Exposes document upload, retrieval, and question-answering endpoints using Spring Boot.
+Spring AI Integration: Uses Spring AI to connect the embedding model, vector store, and chat model.
 
-**Planned features:**
-- Document upload and text extraction
-- LLM integration
-- Retrieval-Augmented Generation (RAG)
-- Vector database
-- REST APIs using Spring Boot
-- API documentation using Swagger
-- Dockerized application
+## Tech Stack
+Language: Java 17
+Backend: Spring Boot, Spring AI
+AI Models: Google Gemini
+Document Processing: Apache PDFBox
+Database: PostgreSQL, pgvector
+Build Tool: Maven
+Testing: Postman
 
 ---
 
@@ -70,7 +78,7 @@ An AI-powered document assistant that allows users to upload documents and ask q
 
 A full-stack task management application demonstrating frontend, backend and database integration.
 
-**Planned features:**
+ ## Features:
 - User authentication
 - Task creation and management
 - Task status tracking
